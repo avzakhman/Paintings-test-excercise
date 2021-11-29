@@ -1,0 +1,417 @@
+@media (max-width: 2560px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+}
+@media (max-width: 1350px) {
+    .main {
+        padding-top: 90px;
+    }
+    header, footer {
+        height: 90px;
+    }
+    .header {
+        &__wrapper {
+            height: 90px;
+        }
+    }
+    .container {
+        width: 1140px;
+    }
+    .navigation {
+        margin-left: 0px;
+        a {
+            margin-right: 33px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            height: 90px;
+            padding: 0px 47px;
+        }
+        address {
+            width: 451px;
+        }
+    }
+    .catalog {
+        min-height: 786px;
+        &__wrapper {
+            padding: 41px 0px;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .main {
+        padding-top: 70px;
+    }
+    .container {
+        width: 840px;
+    }
+    header, footer {
+        height: 70px;
+    }
+    .header {
+        &__wrapper {
+            padding: 0px;
+            height: 70px;
+        }
+        &__search {
+            button {
+                font-size: 12px;
+                width: 100px;
+                height: 44px;
+            }
+            input {
+                font-size: 12px;
+                outline: none;
+                width: 250px;
+                height: 44px;
+                padding: 10px 12px 10px 12px;
+            }
+        }
+    }
+    .navigation {
+        a {
+            margin-right: 28px;
+            font-size: 12px;
+        }
+    }
+    .footer {
+        height: 70px;
+        &__wrapper {
+            padding-left: 0px;
+            justify-content: space-between;
+            height: 70px;
+        }
+        address {
+            width: max-content;
+            flex-direction: column;
+            height: 70px;
+            justify-content: center;
+            a {
+                display: block;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .catalog {
+        padding-top: 30px;
+        h1 {
+            margin-left: 40px;
+            font-size: 22px;
+        }
+        &__wrapper {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .card {
+        width: 200px;
+        height: 230px;
+        border: solid 1px #E1E1E1;
+        &__image {
+            width: 200px;
+            height: 120px;
+            img {
+                object-fit: contain;
+            }
+        }
+        &__text {
+            padding: 8px;
+            h2 {
+                line-height: 22px;
+                font-size: 16px;
+            }
+        }
+        &__prices {
+            margin-top: 10px;
+            button {
+                width: 90px;
+                height: 35px;
+                font-size: 12px;
+            }
+            .shorter-button {
+                width: 90px;
+            }
+        }
+        &__price {
+            font-size: 13px;
+            line-height: 20px;
+            &_old {
+                font-size: 11px;
+            }
+        }   
+    }
+}
+@media (max-width: 880px) {
+    .main {
+        padding-top: 60px;
+    }
+    .container {
+        width: 660px;
+    }
+    .header {
+        height: 60px;
+        &__wrapper {
+            height: 60px;
+        }
+        &__search {
+            button {
+                font-size: 11px;
+                width: 90px;
+                height: 40px;
+            }
+            input {
+                font-size: 11px;
+                width: 180px;
+                height: 40px;
+                padding: 8px 10px 8px 10px;
+            }
+        }
+    }
+    .navigation {
+        a {
+            margin-right: 23px;
+            font-size: 11px;
+        }
+    }
+    .footer {
+        height: 60px;
+        &__wrapper {
+            height: 60px;
+        }
+        address {
+            align-items: end;
+            height: 60px;
+            a {
+                font-size: 10px;
+                &:before {
+                    top: 2px;
+                    left: -16px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+    .catalog {
+        min-height: 807px;
+        padding-top: 25px;
+        h1 {
+            margin-left: 30px;
+            font-size: 20px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            padding: 25px 0;
+        }
+    }
+    .card {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        max-width: 500px;
+    }
+    .darken {
+        display: block;
+    }
+    .header {
+        &__hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: 15px;
+            top: 15px;
+            border: none;
+            outline: none;
+            span {
+                width: 100%;
+                height: 5px;
+                background-color: #555555;
+            }
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__search {
+            button {
+                font-size: 10px;
+                width: 90px;
+                height: 40px;
+            }
+            input {
+                font-size: 10px;
+                width: 220px;
+                height: 40px;
+                padding: 8px 10px 8px 10px;
+            }
+        }
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+    .footer {
+        &__wrapper {
+            justify-content: center;
+        }
+        address {
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            a {
+                margin: 20px;
+            }
+        }
+    }
+    .catalog {
+        h1 {
+            text-align: center;
+        }
+        &__wrapper {
+            padding: 25px 25px;
+        }
+    }
+    .card {
+        margin-bottom: 45px;
+    }
+
+}
+@media (max-width: 520px) {
+    .catalog {
+        height: max-content;
+        padding-top: 20px;
+        h1 {
+            margin-left: 0px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        &__wrapper {
+            padding: 21px 0px;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+        }
+    }
+    .container {
+        max-width: 320px;
+    }
+    .card {
+        margin-bottom: 20px;
+        width: 280px;
+        height: 328px;
+        &__image {
+            width: 280px;
+            height: 160px;
+        }
+        &__text {
+            padding: 24px;
+            h2 {
+                margin-top: -3px;
+                line-height: 26px;
+                font-size: 18px;
+            }
+        }
+        &__prices {
+            margin-top: 22px;
+            button {
+                width: 118px;
+                height: 48px;
+                font-size: 14px;
+            }
+            .shorter-button {
+                width: 112px;
+            }
+        }
+        &__price {
+            font-size: 16px;
+            line-height: 24px;
+            &_old {
+                font-weight: 300;
+                text-decoration:line-through;
+                font-size: 14px;
+                color: #A0A0A0;
+            }
+        }   
+    }
+    .footer {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        &__wrapper {
+            height: unset;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        address {
+            width: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            a {
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+                &:before {
+                    left: -25px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+    .header {
+        &__wrapper {
+        position: absolute;
+        left: 8px;
+        }
+        &__hamburger {
+            right: 24px;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .header {
+        &__hamburger {
+            right: 10px;
+        }
+        &__wrapper {
+            padding: 0px;
+            height: 60px;
+        }
+        &__search {
+            button {
+                width: 80px;
+                height: 40px;
+            }
+            input {
+                max-width: 175px;
+                height: 40px;
+                padding: 6px 8px 6px 8px;
+            }
+        }
+    }
+}

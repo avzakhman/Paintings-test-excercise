@@ -1,0 +1,44 @@
+.header {
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    border: solid 1px #E1E1E1;
+    &__hamburger {
+        display: none;
+    }
+    &__wrapper {
+        padding: 0px 55px 0px 38px;
+        height: 94px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__search {
+        display: flex;
+        button {
+            outline: none;
+            width: 122px;
+            height: 48px;
+            border: none;
+            background-color: $buttoncolor;
+            font-weight: bold;
+            color: #fff;
+            &:hover {
+                background-color: #776763;
+            }
+        }
+        input {
+            background-color: #F6F3F3;
+            font-size: 14px;
+            outline: none;
+            width: 294px;
+            height: 48px;
+            border: solid 1px #E1E1E1;
+            color: #9F9F9F;
+            padding: 13px 16px 14px 16px;
+            &::placeholder {
+                color: #9F9F9F;
+            }
+        }
+    }
+}

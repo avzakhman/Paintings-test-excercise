@@ -1,0 +1,60 @@
+@import 'base/variables';
+
+
+* {
+    transition: all 0.2s;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather';
+}
+.darken {
+    display: none;
+    transition: none;
+    z-index: 1;
+    top: -1080px;
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+    opacity: 0.2;
+    &_active {
+        display: block;
+        top: 0px;
+    }
+}
+.container {
+    width: 1310px;
+    margin: 0 auto;
+    
+}
+header, main, footer {
+    background-color: #F6F3F3;
+}
+
+.navigation {
+    display: flex;
+    margin-left: 97px;
+    a {
+        display: block;
+        margin-right: 48px;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        color: $textcolor;
+    }
+}
+
+.main {
+    padding-top: 96px;
+    overflow: hidden;
+}
+
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/catalog';
+@import 'blocks/media';
+@import 'blocks/hamburger';
+@import 'blocks/modal';
+
+

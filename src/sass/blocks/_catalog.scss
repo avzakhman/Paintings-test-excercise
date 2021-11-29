@@ -1,0 +1,98 @@
+.catalog {
+
+    min-height: 768px;
+    padding-top: 48px;
+    h1 {
+        margin-left: 48px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__wrapper {
+        padding: 41px 47px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 328px;
+    border: solid 1px #E1E1E1;
+    &__image {
+        width: 280px;
+        height: 160px;
+        overflow: hidden;
+    }
+    &__text {
+        padding: 24px;
+        h2 {
+            margin-top: -3px;
+            line-height: 26px;
+            font-size: 18px;
+            font-weight: 400;
+            color: $textcolor;
+        }
+    }
+    &__prices {
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        button {
+            width: 118px;
+            height: 48px;
+            background-color: $buttoncolor;
+            border: none;
+            outline: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            &:hover {
+                background-color: #776763;
+            }
+        }
+        .buffering {
+            background-color: #E1E1E1;
+            &:hover {
+                background-color: #E1E1E1;
+            }
+        }
+        .disabled {
+            display: none;
+        }
+        .checked {
+            background-color: #5B3A32;
+        }
+        .shorter-button {
+            width: 112px;
+        }
+    }
+    &__label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__price {
+        font-size: 16px;
+        color: $textcolor;
+        font-weight: bold;
+        line-height: 24px;
+        &_old {
+            font-weight: 300;
+            text-decoration:line-through;
+            font-size: 14px;
+            color: #A0A0A0;
+        }
+    }   
+}
+
+.soldout {
+    opacity: 0.5;
+    .card__price {
+        margin-top: 12px;
+    }
+}

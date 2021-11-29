@@ -1,0 +1,44 @@
+.footer {
+    width: 100%;
+    background-color: #ECEAEA;
+    height: 96px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 96px;
+        padding-left: 47px;
+    }
+    address {
+        width: 471px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            position: relative;
+            color: #555555;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            font-style: normal;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 1px;
+                left: -25px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+.number {
+    &:before {
+        background: url(../../icons/phone.png) center / contain;
+    }
+}
+.location {
+    &:before {
+        background: url(../../icons/adress.png) center / contain;
+    }
+}
+
